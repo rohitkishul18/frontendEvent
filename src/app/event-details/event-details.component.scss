@@ -1,0 +1,52 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .event-details {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .event-details-image {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .event-details-info {
+    max-width: 500px;
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+  
+    .event-location,
+    .event-date {
+      font-weight: bold;
+    }
+  
+    .book-event-button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+  
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
+  

@@ -1,0 +1,12 @@
+<div class="container">
+  <div *ngIf="event" class="event-details">
+    <img [src]="event.images[0]" alt="Event Image" class="event-details-image">
+    <div class="event-details-info">
+      <h1>{{ event.title }}</h1>
+      <p>{{ event.description }}</p>
+      <p class="event-location">📍 {{ event.location }}</p>
+      <p class="event-date">📅 {{ event.date | date: 'longDate' }}</p>
+      <button (click)="bookEvent()" class="book-event-button">Book Now</button>
+    </div>
+  </div>
+</div>

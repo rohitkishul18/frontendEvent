@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 class="page-title">Upcoming Events</h1>
+  <div class="events-grid">
+    <div class="event-card" *ngFor="let event of events">
+      <img [src]="event.images[0]" alt="Event Image" class="event-image">
+      <div class="event-info">
+        <h2>{{ event.title }}</h2>
+        <p>{{ event.description }}</p>
+        <p class="event-location">📍 {{ event.location }}</p>
+        <p class="event-date">📅 {{ event.date | date: 'longDate' }}</p>
+        <a [routerLink]="['/event', event._id]" class="view-details">View Details</a>
+      </div>
+    </div>
+  </div>
+</div>
